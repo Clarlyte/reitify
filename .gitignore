@@ -1,0 +1,78 @@
+# Node.js / Next.js
+
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# testing
+coverage/
+
+# production
+build/
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tailwind CSS cache files
+tailwind.config.js
+postcss.config.js
+
+# local environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python / Django
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+
+# local environment
+.env
+
+# Caches
+*.mo
+*.pyc
+
+# Virtualenv
+venv/
+env/
+
+# Django migrations
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+migrations/
+
+# Static files
+staticfiles/
+media/
+
+# Other
+*.lock
+local_settings.py

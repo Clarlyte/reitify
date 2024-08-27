@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import PortfolioPrediction
+from .serializers import PortfolioPredictionSerializer
 
-# Create your views here.
+class PortfolioPredictionViewSet(viewsets.ModelViewSet):
+    queryset = PortfolioPrediction.objects.all()
+    serializer_class = PortfolioPredictionSerializer

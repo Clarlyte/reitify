@@ -21,7 +21,7 @@ export default function ReitList() {
       <ul>
         {reits.map(reit => (
           <li key={reit.id}>
-            {reit.name} - Market Cap: {reit.marketCap}
+            {reit.name} - Market Cap: {reit.market_cap}
           </li>
         ))}
       </ul>

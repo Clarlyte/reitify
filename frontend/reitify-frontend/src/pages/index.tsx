@@ -18,7 +18,6 @@ export default function Home() {
 
   const handleAction = () => {
     setIsLoading(true);
-    // Simulate an action
     setTimeout(() => {
       setIsLoading(false);
       setAlertMessage('Action completed successfully!');
@@ -27,29 +26,23 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Header Component */}
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
 
-      {/* Main Content */}
-      <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main className="flex-grow container mx-auto py-10">
         <h1 className="text-4xl font-extrabold text-gray-900 mb-6 text-center">Welcome to Reitify</h1>
         <p className="text-center text-gray-600 mb-8">
           Discover the best REIT investments and manage your portfolio with ease.
         </p>
 
-        {/* Alert Component */}
         {alertMessage && <Alert message={alertMessage} type="success" />}
 
-        {/* Action Button to Open Modal */}
         <div className="text-center mb-8">
           <Button label="Get Started" onClick={handleModalOpen} />
         </div>
 
-        {/* ReitList Component */}
         <ReitList />
 
-        {/* Example Card Usage */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card
             title="Manage Your Portfolio"
@@ -68,7 +61,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Modal Component */}
         <Modal isOpen={isModalOpen} onClose={handleModalClose}>
           <h2 className="text-xl font-semibold mb-4">Get Started with Reitify</h2>
           <p className="mb-4">Sign up to unlock all features and start managing your investments today.</p>
@@ -78,11 +70,9 @@ export default function Home() {
           </div>
         </Modal>
 
-        {/* Spinner Component */}
         {isLoading && <Spinner />}
       </main>
 
-      {/* Footer Component */}
       <Footer />
     </div>
   );

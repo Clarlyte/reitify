@@ -22,7 +22,7 @@ export default function Home() {
       setIsLoading(false);
       setAlertMessage('Action completed successfully!');
       handleModalClose();
-    }, 2000);
+    }, 5);
   };
 
   return (
